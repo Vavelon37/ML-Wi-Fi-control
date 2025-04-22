@@ -50,7 +50,6 @@ def send_metric_to_prometheus(metric_name, value):
     except Exception as e:
         print(f"Ошибка отправки метрики в Prometheus: {e}")
 
-# Реакция на аномалию
 def mitigate_attack(simulator):
     """Снижение нагрузки при атаке."""
     print("Атака обнаружена! Принимаются меры для снижения нагрузки...")
